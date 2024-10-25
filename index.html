@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fitriningtyas</title>
     
+<!--    my favicon-->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
 <!--    my own styles-->
     <link rel="stylesheet" href="assets/css/style.css">
     
@@ -14,16 +17,31 @@
     
 <!--    font awesome 6.6.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="nav-wrapper">
+        <div id="hiddenBox"></div>
+        <div id="nav-wrapper">
             <nav>
                 <ul>
-                    <li><a href="#"> Home</a></li>
+                    <li><a href="./index.html"> Home</a></li>
                     <li><a href="https://fitnr.netlify.app/" target="_blank"> Blog</a></li>
                 </ul>
             </nav>
+            <div id="menu-mobile">
+                <div class="wrapper-menumobile">
+                     <ul>
+                        <li><a href="./index.html"> Home</a></li>
+                        <li><a href="https://fitnr.netlify.app/" target="_blank"> Blog</a></li>
+                    </ul>
+                </div>
+            </div>              
+            <div id="mobile-icon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
         </div>
     </header>
     <main>
