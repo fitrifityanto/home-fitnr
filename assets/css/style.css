@@ -179,7 +179,7 @@ main .profile-wrapper .img-profile img {
 }
 
 .profile-wrapper .text-profile p {
-    max-width: 400px;
+    width: min(400px, 90vw)
 }
 
 main .socialmedia-icon {
@@ -195,11 +195,13 @@ main .socialmedia-icon {
 
 main .socialmedia-icon a {
     text-decoration: none;
-    font-size: 1rem;
+}
+
+main .socialmedia-icon i {
+    font-size: 1.3rem;
     font-weight: 500;
     color: black;
 }
-
 
 
 @media (min-width: 450px) and (max-width: 640px) {
