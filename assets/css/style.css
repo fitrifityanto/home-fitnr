@@ -75,6 +75,24 @@ header #menu-mobile {
      
 }
 
+.animate-m-mobile {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes animate-fade {
+    0% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
 header #menu-mobile .wrapper-menumobile {
     padding-top: 2rem;
 }

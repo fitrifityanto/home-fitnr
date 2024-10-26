@@ -17,6 +17,3 @@ iconClose.addEventListener('click', () => {
   iconClose.style.display = 'none';
   hiddenBox.style.display = 'none';
 });
-
-
-
