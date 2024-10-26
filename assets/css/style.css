@@ -64,7 +64,7 @@ header #menu-mobile {
     display: none;
 
     width: min(90vw, 320px);
-    height: 80vh;
+    height: 100vh;
     
     padding-block: 1rem;
     
