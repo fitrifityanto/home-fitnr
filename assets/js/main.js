@@ -1,8 +1,9 @@
-const menuMobile = document.getElementById('menu-mobile');
+const menuMobile = document.getElementById('menuMobile');
 const hiddenBox = document.getElementById('hiddenBox');
 
-const iconBar = document.getElementById('mobile-icon').firstElementChild;
-const iconClose = document.getElementById('mobile-icon').lastElementChild;
+const iconBar = document.getElementById('mobileIcon').firstElementChild;
+const iconClose = document.getElementById('mobileIcon').lastElementChild;
+
 
 iconBar.addEventListener('click', () => {
   menuMobile.style.display = 'block';

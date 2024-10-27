@@ -8,7 +8,9 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
 <!--    my own styles-->
-    <link rel="stylesheet" href="assets/css/style.css">
+<!--    <link rel="stylesheet" href="assets/css/style.css">-->
+    
+    <link href="./assets/css/output.css" rel="stylesheet">
     
 <!--    my google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,41 +24,45 @@
 </head>
 <body>
     <header>
-        <div id="hiddenBox"></div>
-        <div id="nav-wrapper">
-            <nav>
-                <ul>
+        <div id="hiddenBox" class="w-full h-screen backdrop-blur-sm bg-black/20 absolute top-0 right-0 z-10" style="display: none"></div>
+        <div class="w-full bg-yellow-fit">
+            <div class="max-w-5xl flex justify-end md:justify-around items-center py-4 pe-8 md:pe-0 mx-auto relative">
+            <nav class="w-full pe-8 hidden md:block">
+                <ul class="ps-0 flex justify-end gap-8">
                     <li><a href="./"> Home</a></li>
                     <li><a href="https://fitnr.netlify.app/" target="_blank"> Blog</a></li>
                 </ul>
             </nav>
-            <div id="menu-mobile" class="animate-m-mobile">
-                <div class="wrapper-menumobile">
-                     <ul>
+            <div id="menuMobile" class="absolute top-0 right-0 w-[90vw] h-screen bg-yellow-fit z-20 animate-fade" style="display: none">
+                <div class="ps-8 pt-[5rem]">
+                     <ul class="flex flex-col gap-1">
                         <li><a href="./"> Home</a></li>
                         <li><a href="https://fitnr.netlify.app/" target="_blank"> Blog</a></li>
                     </ul>
                 </div>
             </div>              
-            <div id="mobile-icon">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-xmark"></i>
+            <div id="mobileIcon" class="md:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars text-2xl"></i>
+                <i class="fa-solid fa-xmark text-2xl" style="display: none"></i>
             </div>
         </div>
+        </div>
+
     </header>
     <main>
-        <div class="box"></div>
-        <div class="profile-wrapper">
-            <div class="img-profile"><img src="assets/images/profile.jpg"> </div>
-            <div class="text-profile">
+        <div class="w-full h-52 bg-yellow-fit mx-auto"></div>
+        <div class="flex flex-col justify-center items-center gap-2 mb-2">
+            <div class="w-52 mt-[-100px]"><img src="assets/images/profile.jpg" class="rounded-full border-4 border-solid border-white"> </div>
+            <div class="text-center">
                 <h1>fitriningtyas</h1>
-                <p>Berikhtiarlah.. berusahalah.. <br/> Allah akan mudahkan apa yang takdirkan untuk mu</p>
+                <p class="max-w-96 w-[90vw]">Berikhtiarlah.. berusahalah.. <br/> Allah akan mudahkan apa yang takdirkan untuk mu</p>
             </div>
         </div>
-        <div class="socialmedia-icon">
-            <a href="https://twitter.com/fit_nr"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://instagram.com/fitrifitwidy"><i class="fa-brands fa-instagram"></i></a>
+        <div class="flex justify-center items-center gap-3">
+            <a href="https://twitter.com/fit_nr"><i class="fa-brands fa-x-twitter text-xl"></i></a>
+            <a href="https://instagram.com/fitrifitwidy"><i class="fa-brands fa-instagram text-xl"></i></a>
         </div>
+
     </main>
 </body>
 </html>
